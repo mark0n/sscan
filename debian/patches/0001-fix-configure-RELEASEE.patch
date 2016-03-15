@@ -1,0 +1,31 @@
+From: Michael Davidsaver <mdavidsaver@gmail.com>
+Date: Tue, 15 Mar 2016 10:33:50 -0400
+Subject: fix configure/RELEASEE
+
+---
+ configure/RELEASE | 8 +++-----
+ 1 file changed, 3 insertions(+), 5 deletions(-)
+
+diff --git a/configure/RELEASE b/configure/RELEASE
+index 9faf7e7..ab35a20 100644
+--- a/configure/RELEASE
++++ b/configure/RELEASE
+@@ -4,15 +4,13 @@
+ 
+ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+ 
+-SUPPORT=/home/oxygen/MOONEY/epics/synAppsSVN/support
+--include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
++SUPPORT=$(EPICS_BASE)
+ 
+ #If using the sequencer, point SNCSEQ at its top directory:
+-SNCSEQ=$(SUPPORT)/seq-2-2-0-2
++SNCSEQ=$(EPICS_BASE)
+ 
+ # EPICS_BASE usually appears last so other apps can override stuff:
+-EPICS_BASE=/APSshare/epics/base-3.14.12.3
+--include $(TOP)/../configure/EPICS_BASE.$(EPICS_HOST_ARCH)
++EPICS_BASE=/usr/lib/epics
+ 
+ #Capfast users may need the following definitions
+ #CAPFAST_TEMPLATES=
