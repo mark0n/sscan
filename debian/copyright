@@ -1,17 +1,17 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: PACKAGENAME
+Upstream-Name: epics-sscan
 Upstream-Contact: Some One <some.one.@somewhere>
 Source: http://some.url/
 
 Files: *
 Copyright:  Copyright 2016 Some One
 License: EPICS
-  PACKAGENAME is distributed subject to the following license conditions:
+  epics-sscan is distributed subject to the following license conditions:
   .
   SOFTWARE LICENSE AGREEMENT
-  Software: PACKAGENAME
+  Software: epics-sscan
   .
-  1. The "Software", below, refers to PACKAGENAME (in either source code, or
+  1. The "Software", below, refers to epics-sscan (in either source code, or
      binary form and accompanying documentation). Each licensee is
      addressed as "you" or "Licensee."
   .

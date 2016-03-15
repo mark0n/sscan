@@ -1,32 +1,85 @@
-Source: PACKAGENAME
+Source: epics-sscan
 Section: libdevel
 Priority: extra
-Maintainer: Your Name <your.name@somewhere>
+Maintainer: Michael Davidsaver <mdavidsaver@gmail.com>
 Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
                epics-dev,
+               rtems-epics-mvme2100,
+               rtems-epics-mvme3100,
+               rtems-epics-mvme5500,
+               rtems-epics-pc386,
+XS-Rtems-Build-Depends: rtems-epics
 Standards-Version: 3.9.6
-Homepage: http://some.url/
-Vcs-Git: https://github.com/epicsdeb/PACKAGENAME.git
-Vcs-Browser: https://github.com/epicsdeb/PACKAGENAME
+Homepage: http://aps.anl.gov/bcda/synApps/sscan/sscan.html
+Vcs-Git: https://github.com/epicsdeb/sscan.git
+Vcs-Browser: https://github.com/epicsdeb/sscan
 
-Package: epics-PACKAGENAME-dev
+Package: epics-sscan-dev
 Architecture: any
-Depends: libPACKAGENAME1 (= ${binary:Version}),
+Depends: libepics-sscan2.10 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps,
-Description: Short description
- Long description
- with lines indented
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
  .
  This package contains headers and libraries needed at build time.
 
-Package: libPACKAGENAME1
+Package: libepics-sscan2.10
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Conflicts: epics-synapps,
-Description: Short description
- Long description
- with lines indented
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
  .
  This package contains runtime libraries
+
+Package: rtems-sscan-mvme2100
+Architecture: all
+Depends: epics-sscan-dev (>= ${source:Version}),
+         epics-sscan-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
+ .
+ This package contains support for the MVME2100 VME SBC
+
+Package: rtems-sscan-mvme3100
+Architecture: all
+Depends: epics-sscan-dev (>= ${source:Version}),
+         epics-sscan-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
+ .
+ This package contains support for the MVME3100 VME SBC
+
+Package: rtems-sscan-mvme5500
+Architecture: all
+Depends: epics-sscan-dev (>= ${source:Version}),
+         epics-sscan-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
+ .
+ This package contains support for the MVME5500 VME SBC
+
+Package: rtems-sscan-pc386
+Architecture: all
+Depends: epics-sscan-dev (>= ${source:Version}),
+         epics-sscan-dev (<< ${source:Version}.1~),
+         ${rtems:Depends}, ${misc:Depends},
+Conflicts: epics-synapps,
+Description: Software for systematically moving positioners, triggering detectors,
+ Software for systematically moving positioners, triggering detectors,
+ and acquiring and storing resulting data
+ .
+ This package contains support for the PC386 RTEMS BSP
