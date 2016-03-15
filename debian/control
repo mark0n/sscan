@@ -19,8 +19,8 @@ Architecture: any
 Depends: libepics-sscan2.10 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Conflicts: epics-synapps, epics-synapps-dev,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
@@ -29,8 +29,7 @@ Description: Software for systematically moving positioners, triggering detector
 Package: libepics-sscan2.10
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
@@ -41,8 +40,8 @@ Architecture: all
 Depends: epics-sscan-dev (>= ${source:Version}),
          epics-sscan-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Conflicts: rtems-synapps-mvme2100,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
@@ -53,8 +52,8 @@ Architecture: all
 Depends: epics-sscan-dev (>= ${source:Version}),
          epics-sscan-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Conflicts: rtems-synapps-mvme3100,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
@@ -65,8 +64,8 @@ Architecture: all
 Depends: epics-sscan-dev (>= ${source:Version}),
          epics-sscan-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Conflicts: rtems-synapps-mvme5500,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
@@ -77,8 +76,8 @@ Architecture: all
 Depends: epics-sscan-dev (>= ${source:Version}),
          epics-sscan-dev (<< ${source:Version}.1~),
          ${rtems:Depends}, ${misc:Depends},
-Conflicts: epics-synapps,
-Description: Software for systematically moving positioners, triggering detectors,
+Conflicts: rtems-synapps-pc386,
+Description: Parametric scanning module
  Software for systematically moving positioners, triggering detectors,
  and acquiring and storing resulting data
  .
