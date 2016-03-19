@@ -8,7 +8,12 @@ Build-Depends: debhelper (>= 9), epics-debhelper (>= 8.14~),
                rtems-epics-mvme3100,
                rtems-epics-mvme5500,
                rtems-epics-pc386,
-XS-Rtems-Build-Depends: rtems-epics
+               epics-seq-dev,
+               rtems-seq-mvme2100,
+               rtems-seq-mvme3100,
+               rtems-seq-mvme5500,
+               rtems-seq-pc386,
+XS-Rtems-Build-Depends: rtems-epics, rtems-seq,
 Standards-Version: 3.9.6
 Homepage: http://aps.anl.gov/bcda/synApps/sscan/sscan.html
 Vcs-Git: https://github.com/epicsdeb/sscan.git
