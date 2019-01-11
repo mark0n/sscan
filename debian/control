@@ -21,7 +21,7 @@ Vcs-Browser: https://github.com/epicsdeb/sscan
 
 Package: epics-sscan-dev
 Architecture: any
-Depends: libepics-sscan2.10 (= ${binary:Version}),
+Depends: libepics-sscan2.11.1 (= ${binary:Version}),
          ${shlibs:Depends}, ${misc:Depends},
          ${epics:Depends},
 Conflicts: epics-synapps, epics-synapps-dev,
@@ -31,7 +31,7 @@ Description: Parametric scanning module
  .
  This package contains headers and libraries needed at build time.
 
-Package: libepics-sscan2.10
+Package: libepics-sscan2.11.1
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
 Description: Parametric scanning module
