@@ -1,3 +1,11 @@
+epics-sscan (2.11.1-1) unstable; urgency=medium
+
+  * New upstream version 2.11.1
+  * Bump up library package version
+  * Rebase patch queue
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Fri, 11 Jan 2019 12:30:12 -0500
+
 epics-sscan (2.10-2) unstable; urgency=medium
 
   * Use build profile to enable RTEMS cross build
