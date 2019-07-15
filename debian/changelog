@@ -1,3 +1,12 @@
+epics-sscan (2.11.3-1) unstable; urgency=medium
+
+  * New upstream version 2.11.3
+  * Bump up version number in package names
+  * Rebase patch queue
+  * Bump up standards version
+
+ -- Martin Konrad <konrad@frib.msu.edu>  Mon, 15 Jul 2019 12:19:19 -0400
+
 epics-sscan (2.11.1-1) unstable; urgency=medium
 
   * New upstream version 2.11.1
